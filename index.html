@@ -1,0 +1,176 @@
+<!doctype html>
+<html">
+<head>
+<meta charset="utf-8">
+<title>Objects</title>
+<!--<link rel="shortcut icon" href="img/builder.png" type="image/png">-->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/styles.min.css">
+</head>
+<body>
+<div class="container-window">
+	<header class="header">
+		<div class="row-temp b-header w-header">
+			<div class="h_map">
+				<div class="h_map_1"></div>
+				<div class="h_map_2"></div>
+				<div class="h_map_3"></div>
+			</div>
+			<a href="/" class="header_logo">
+				<svg class="header_logo-img">
+					<use xlink:href="#logo"></use>
+				</svg>
+			</a>
+			<nav class="header_nav">
+				<ul>
+					<li class="active"><a href="#">Объекты<idv class="line"></idv></a></li>
+					<li><a href="#">Компания<idv class="line"></idv></a></li>
+					<li><a href="#">Как купить<idv class="line"></idv></a></li>
+					<li><a href="#">Агентам<idv class="line"></idv></a></li>
+					<li><a href="#">Регионам<idv class="line"></idv></a></li>
+					<li><a href="#">Акции<idv class="line"></idv></a></li>
+					<li><a href="#">Контакты<idv class="line"></idv></a></li>
+				</ul>
+			</nav>
+			<div class="header_phone">
+				<a href="tel:+74950211057">8 (888) 88 88 88</a>
+				<span>Звони скорее!</span>
+			</div>
+		</div>
+	</header>
+	<main class="main bg-objects">
+		
+		<section class="container">
+			<div class="wrap_objects">
+				<div class="objects_title"></div>
+			</div>
+			<div class="wrap_objects bg_white">
+				
+				<div class="objects_sort-wrap">
+					<div>Сортировать по:</div>
+					<ul class="sort_list">
+						<li data-sort="price" data-order="asc" class="sort_item">
+							Цене
+							<div class="line"></div>
+							<svg version="1.1" class="icon_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 489.6 489.6" style="enable-background:new 0 0 489.6 489.6;" xml:space="preserve">
+								<g>
+									<path style="fill:#f6f8f9;" d="M244.8,489.6c135,0,244.8-109.8,244.8-244.8S379.8,0,244.8,0S0,109.8,0,244.8
+										S109.8,489.6,244.8,489.6z M244.8,19.8c124.1,0,225,100.9,225,225s-100.9,225-225,225s-225-100.9-225-225S120.7,19.8,244.8,19.8z"
+										/>
+									<path style="fill:#6ea4b4;" d="M210,326.1c1.9,1.9,4.5,2.9,7,2.9s5.1-1,7-2.9l74.3-74.3c1.9-1.9,2.9-4.4,2.9-7s-1-5.1-2.9-7
+										L224,163.5c-3.9-3.9-10.1-3.9-14,0s-3.9,10.1,0,14l67.3,67.3L210,312.1C206.2,316,206.2,322.3,210,326.1z"/>
+								</g>
+							</svg>
+						</li>
+						<li data-sort="room" data-order="asc" class="sort_item">
+							Комнатам
+							<div class="line"></div>
+							<svg version="1.1" class="icon_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 489.6 489.6" style="enable-background:new 0 0 489.6 489.6;" xml:space="preserve">
+								<g>
+									<path style="fill:#f6f8f9;" d="M244.8,489.6c135,0,244.8-109.8,244.8-244.8S379.8,0,244.8,0S0,109.8,0,244.8
+										S109.8,489.6,244.8,489.6z M244.8,19.8c124.1,0,225,100.9,225,225s-100.9,225-225,225s-225-100.9-225-225S120.7,19.8,244.8,19.8z"
+										/>
+									<path style="fill:#6ea4b4;" d="M210,326.1c1.9,1.9,4.5,2.9,7,2.9s5.1-1,7-2.9l74.3-74.3c1.9-1.9,2.9-4.4,2.9-7s-1-5.1-2.9-7
+										L224,163.5c-3.9-3.9-10.1-3.9-14,0s-3.9,10.1,0,14l67.3,67.3L210,312.1C206.2,316,206.2,322.3,210,326.1z"/>
+								</g>
+							</svg>
+						</li>
+					</ul>
+				</div>
+
+				<div id="objects-list" class="row-temp">
+
+				</div>
+				<div class="objects_btn_more"></div>
+			</div>
+			
+		</section>
+		
+		<div class="container subscription">
+			<div class="subscription_content">
+				<div class="subscription_title">Успей купить!</div>
+				<div class="subscription_comment">Подпишись и успей словить все акции</div>
+			</div>
+			<div class="subscription_form">
+				<form class="form" action="" method="post">
+					<div class="wrapper_input">
+						<input data-field="email" type="text" name="email" placeholder="E-mail" class="input">
+						<div class='error_message'><pre></pre></div>
+					</div>
+					<input data-form="btn" type="submit" value="подписаться" class="btn_subscription">
+					<div class="checkbox_consent">
+						<input type="checkbox" id="consent" name="consent" checked>
+						<label for="consent">подписаться на новости</label>
+					</div>
+				</form>
+				
+			</div>
+		</div>
+	</main>
+	<div id="btntop" class="btn-top">
+		<svg class="icon_top">
+			<use xlink:href="#top"></use>
+		</svg>
+	</div>
+</div>
+<svg class="icons_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<symbol viewBox="0 0 34 85" id="logo" xmlns="http://www.w3.org/2000/svg">
+		<g fill="none" fill-rule="evenodd">
+			<image width="34" height="85" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAABVCAYAAAAsYDa7AAAC5klEQVRoge2asWsUQRTGvwtiFFNESGJKsU+CYKmQWHlFxMImIFh4Eqw8Qcj/IARBAhYa0MJokSKdVgnEKyxs7FIFWwXRhGAukePJ3D5x7723t3Ozl9wR5gevuG/nvfkyN3s7OxMQUWgMENEiEf3mWGQtqJ4SOogKaSqh9QYQzlUj09K8KGKkq5wIIwdKsbUjN/IOAKU+E2tBlJq3TjhlAA84+zmA970y0jX6ZrKeAnAawCMAMwDOqBZHSx3ABoCn7qt5CeDecY+AYNkZOeBR6SWHzkhfzNa+mqwWrwF8NfQ0twBMCe0LgDXVspWLAO4qVT3IE6atR7WIVyor0ay26ZhWWW4ho5z1iGhEEo1IohFJNCKJRiTRiCRrGTDOj+t2DBnXhjzyxpXCrxNxhZYmGpH0vZFZAOdz4q3KSrS8vFmV1eb23QPwS6mtHCol0fLy9pTSZkSOnWhEEo1IohFJlpGzSukeZu0sI4+V0j3M2s7IplKB6wDmlFqcOa4t2XRGFpSc8AzAqFLDGeWaFgvOyCcAK8bFEQAv3CpOXemcEtcaMTLfND3wTs4FIvqRsXtUNXZ9Ot0xqqqWCa7PsfTB0TcA1Yy/8wlvBocywzUsHgL43tSF81XlOeEnEU0EjMgE51qstjtKczvQ24bzYQDrACbVlWwmOWfYaLEtd7ulkR0AtwHsq9Rkon3ko5E8ytzWmpz73MdOi2pMLBc3iahhDOc/lohoRamJtqTU/zS4tupTCamYV2Va+aMUW0szb/Tjde57P2dkfGlwLasP7wPoMhHtFjCxyzWs2h2fhF8ioprqIp8a51o1g4/k3Qv7HSLa8jCwxW1LRh0zQg4X3XPjGoAbAK4AGGPd/UJ+BvCBb92OCsdTTknWK6cvU6mf6mU+OArDmjiecZmI6qkJWmctqF6Rr6YCYDD1eZC1IIoYOacUW/MivmBJohFJNCKJRiTRiCQakUQjkhNhpOap+VFgqdi9/3kmwl9O7CrsV3AutAAAAABJRU5ErkJggg=="/>
+		</g>
+	</symbol>
+	<symbol viewBox="0 0 451.847 451.846" id="top" xmlns="http://www.w3.org/2000/svg">
+		<g fill="none" fill-rule="evenodd">
+			<path d="M248.292,106.406l194.281,194.29c12.365,12.359,12.365,32.391,0,44.744c-12.354,12.354-32.391,12.354-44.744,0
+		L225.923,173.529L54.018,345.44c-12.36,12.354-32.395,12.354-44.748,0c-12.359-12.354-12.359-32.391,0-44.75L203.554,106.4
+		c6.18-6.174,14.271-9.259,22.369-9.259C234.018,97.141,242.115,100.232,248.292,106.406z" fill="#ffffff"/>
+		</g>
+	</symbol>
+</svg>
+
+<script id="oblects-container" type="text/x-handlebars-template">
+	{{#each listObject}}
+	<div class="object_item object_item-{{state.type}}">
+			<a href="#" class="object_img">
+				<img src="img/{{shortCode}}" title="" alt=" ">
+				<div class="object_popular object_popular-{{popular}}"></div>
+				
+				{{#if stocks}}
+					<div class="object_stock">
+						{{#each  stocks}}
+							<span>{{this}}</span>
+						{{/each}}
+					</div>
+				{{/if}}
+			</a>
+			<div class="object_content">
+				<div class="object_name">{{caption}} №{{number}}</div>
+				<div class="object_info">
+					<div class="object_furnish">
+						<span>{{furnish}}</span>
+					</div>
+					<div class="object_area">
+						<span>{{area}} м<sup>2</sup></span>
+						<span>площадь</span>
+					</div>
+					<div class="object_floor">
+						<span>{{floor}}/{{numberFloors}}</span>
+						<span>этаж</span>
+					</div>
+				</div>
+				<div class="object_price"><span>{{price}}</span> {{currency}}</div>
+			</div>
+			<div class="object_state">{{state.text}}</div>
+		</div>
+		{{/each}}
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/handlebars-v4.1.2.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

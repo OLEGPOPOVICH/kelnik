@@ -1,0 +1,113 @@
+<?php 
+
+header('Access-Control-Allow-Origin: *');
+$data = file_get_contents("db.json");
+$data = json_decode($data,true);
+$countElemPage = 19;
+$countPage = 1;
+$countElem = null;
+$objectsCount = count($data);
+$objectsSort = [];
+$objects = [[],[$objectsCount],[$countElemPage]];
+$numberFullPages = null;
+
+function updateCountElem(){
+	if($GLOBALS['countPage'] <= $GLOBALS['numberFullPages'] - 1){
+		$GLOBALS['countElem'] = $GLOBALS['countElemPage'] * $GLOBALS['countPage'];
+	} else {
+		$GLOBALS['countElem'] = $GLOBALS['objectsCount'];
+	}
+}
+function updateCountPage(){
+	if(isset($_GET['page'])){
+		$page = $_GET['page'];
+		
+		if($page <= $GLOBALS['numberFullPages']){
+			$GLOBALS['countPage'] = $page;
+		} else {
+			$GLOBALS['countPage'] = 0;
+		}
+	}
+}
+function updateNumberFullPages(){
+	$GLOBALS['numberFullPages'] = ceil($GLOBALS['objectsCount'] / $GLOBALS['countElemPage']);
+}
+
+if (isset($_GET["sort"]) && isset($_GET["order"])){
+	$sort = $_GET["sort"];
+	$sortOrder = $_GET["order"];
+	updateNumberFullPages();
+	updateCountPage();
+	updateCountElem();
+
+	if($sort === "price") {
+		if($sortOrder === "asc") {	
+			usort($data, "sort_asc");
+			foreach ($data as $item):
+				array_push($objectsSort, $item);
+			endforeach;
+		} else {
+			usort($data, "sort_desc");
+		
+			foreach ($data as $item):
+				array_push($objectsSort, $item);
+			endforeach;
+		}
+	}
+		
+	if($sort === "room") {
+		if($sortOrder === "asc") {
+			rsort($data);
+			foreach ($data as $item):
+				array_push($objectsSort, $item);
+			endforeach;
+		} else {
+			sort($data);
+			foreach ($data as $item):
+				array_push($objectsSort, $item);
+			endforeach;
+		}
+	}
+
+	if(count($objectsSort)){
+		for($i = 0; $i < $countElem; $i++){
+			array_push($objects[0], $objectsSort[$i]);
+		}	
+	}
+	
+} else if (isset($_GET["page"])){
+	updateNumberFullPages();
+	updateCountPage();
+	updateCountElem();
+	
+	for($i = 0; $i < $countElem; $i++){
+		array_push($objects[0], $data[$i]);
+	}
+	
+} else {
+	updateNumberFullPages();
+	updateCountElem();
+	for($i = 0; $i < $countElem; $i++){
+		array_push($objects[0], $data[$i]);
+	}
+}
+
+function sort_asc($a, $b) {
+	return $a["price"] - $b["price"];
+}
+function sort_desc($a, $b) {
+	return  $b["price"] - $a["price"];
+}
+
+
+
+if($countElem <= $objectsCount){
+	echo json_encode($objects);
+}
+
+
+
+
+
+
+

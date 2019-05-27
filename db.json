@@ -1,0 +1,1024 @@
+
+[
+	{
+		"caption": "Студия",
+		"number": "44",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "6",
+		"price": "4900000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "3900000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "2900000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "2950000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "46",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "1050000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "3950000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "46",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "2000000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "4000000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "3000000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "46",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "2500000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "4500000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "46",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "3000000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "3500000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "5000000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "44",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "6",
+		"price": "4000000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "4000000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "3900000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "46",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "950000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "2900000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "3950000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "2950000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "46",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "1000000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "4000000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "3000000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "46",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "1500000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "4500000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "3500000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "46",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "2000000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "5000000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "4000000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "44",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "6",
+		"price": "900000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "3900000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "2900000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "46",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "950000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "3950000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "2950000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "46",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "1000000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "4000000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "3000000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "46",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "1500000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "4500000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "3500000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "46",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "2000000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "5000000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "4000000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "44",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "6",
+		"price": "900000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "3900000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "2900000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "46",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "950000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "3950000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "567",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "2950000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "356",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "1000000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "4000000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "276",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "3000000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "46",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "1500000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "666",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "4500000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "253",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "3500000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Студия",
+		"number": "46",
+		"furnish": "без отделки",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "2000000",
+		"currency": "руб.",
+		"stocks": ["-17%","шок цена!"],
+		"popular": "best",
+		"state": {
+			"type": "booked",
+			"text": "забронировано"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Четырехкомнатная",
+		"number": "35",
+		"furnish": "черновая отделка",
+		"area": "28",
+		"floor": "16",
+		"numberFloors": "22",
+		"price": "5000000",
+		"currency": "руб.",
+		"stocks": ["шок цена!"],
+		"popular": "",
+		"state": {
+			"type": "free",
+			"text": "свободно"
+		},
+		"shortCode": "1.png"
+	},
+	{
+		"caption": "Двухкомнатная",
+		"number": "455",
+		"furnish": "базовая отделка",
+		"area": "28",
+		"floor": "6",
+		"numberFloors": "16",
+		"price": "4000000",
+		"currency": "руб.",
+		"stocks": [],
+		"popular": "best",
+		"state": {
+			"type": "sales",
+			"text": "продано"
+		},
+		"shortCode": "1.png"
+	}
+]
+   
