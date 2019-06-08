@@ -966,7 +966,6 @@ input:-internal-autofill-selected {
 .checkbox_consent input[type="checkbox"]:checked + label:after {
 	opacity: 1;
 }
-
 @media (max-width: 1110px) {
 	.subscription {
 		width: 696px;

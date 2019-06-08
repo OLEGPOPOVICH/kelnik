@@ -426,7 +426,6 @@ function findELemDepth(current, classFind){
 	}
 }
 
-
 (function() {
 
 	function trackScroll() {

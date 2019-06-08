@@ -18,6 +18,7 @@ function updateCountElem(){
 		$GLOBALS['countElem'] = $GLOBALS['objectsCount'];
 	}
 }
+
 function updateCountPage(){
 	if(isset($_GET['page'])){
 		$page = $_GET['page'];
@@ -28,6 +29,7 @@ function updateCountPage(){
 		}
 	}
 }
+
 function updateNumberFullPages(){
 	$GLOBALS['numberFullPages'] = ceil($GLOBALS['objectsCount'] / $GLOBALS['countElemPage']);
 }
