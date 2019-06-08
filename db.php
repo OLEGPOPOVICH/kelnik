@@ -3,7 +3,7 @@
 header('Access-Control-Allow-Origin: *');
 $data = file_get_contents("db.json");
 $data = json_decode($data,true);
-$countElemPage = 19;
+$countElemPage = 20;
 $countPage = 1;
 $countElem = null;
 $objectsCount = count($data);
@@ -57,12 +57,12 @@ if (isset($_GET["sort"]) && isset($_GET["order"])){
 		
 	if($sort === "room") {
 		if($sortOrder === "asc") {
-			rsort($data);
+			usort($data, "sortAscRoom");
 			foreach ($data as $item):
 				array_push($objectsSort, $item);
 			endforeach;
 		} else {
-			sort($data);
+			usort($data, "sortDescRoom");
 			foreach ($data as $item):
 				array_push($objectsSort, $item);
 			endforeach;
@@ -92,14 +92,32 @@ if (isset($_GET["sort"]) && isset($_GET["order"])){
 	}
 }
 
+function sortRoom($room){
+	$sortByRoom = [
+		'Студия'=> 0,
+		'Однокомнатная'=> 1,
+		'Двухкомнатная'=> 2,
+		'Трехкомнатная'=> 3,
+		'Четырехкомнатная'=> 4,
+	];
+
+	return $sortByRoom[$room];
+}
+
+function sortAscRoom($a, $b){
+	return sortRoom($a["caption"]) - sortRoom($b["caption"]);
+}
+
+function sortDescRoom($a, $b){
+	return sortRoom($b["caption"]) - sortRoom($a["caption"]);
+}
+
 function sort_asc($a, $b) {
 	return $a["price"] - $b["price"];
 }
 function sort_desc($a, $b) {
 	return  $b["price"] - $a["price"];
 }
-
-
 
 if($countElem <= $objectsCount){
 	echo json_encode($objects);

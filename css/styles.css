@@ -655,6 +655,10 @@ ul {
 	text-transform: uppercase;
 }
 
+.object_img .object_stock > span + span {
+	margin-left: 16px;
+}
+
 .object_content {
     padding-bottom: 24px;
     padding-right: 33px;
@@ -720,7 +724,7 @@ ul {
 .object_content .object_price {
 	height: 24px;
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 600;
 	margin-top: 36px;
 	color: #313639;
 }
@@ -927,6 +931,7 @@ input:-internal-autofill-selected {
     position: relative;
 	padding-left: 30px;
 	font-size: 18px;
+	z-index: 2;
 }
 .checkbox_consent label:before,
 .checkbox_consent label:after {

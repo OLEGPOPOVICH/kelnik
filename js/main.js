@@ -10,28 +10,21 @@ let renderAndSortObjects = (function(){
 		objectsTitle = document.querySelector(".objects_title");
 	
 	function CreateRequest() {
-		var Request = false;
+		let Request = false;
 	
-		if (window.XMLHttpRequest)
-		{
-			//Gecko-совместимые браузеры, Safari, Konqueror
+		if (window.XMLHttpRequest){
 			Request = new XMLHttpRequest();
 		}
 		else if (window.ActiveXObject)
 		{
-			//Internet explorer
-			try
-			{
+			try {
 				 Request = new ActiveXObject("Microsoft.XMLHTTP");
-			}    
-			catch (CatchException)
-			{
+			} catch (CatchException){
 				 Request = new ActiveXObject("Msxml2.XMLHTTP");
 			}
 		}
 	 
-		if (!Request)
-		{
+		if (!Request){
 			alert("Невозможно создать XMLHttpRequest");
 		}
 		
@@ -40,17 +33,16 @@ let renderAndSortObjects = (function(){
 	
 	/* r_method  - тип запроса: GET или POST, r_path    - путь к файлу, r_handler - функция-обработчик ответа от сервера */
 	$.urlParam = function(name){
-		var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-		if (results==null){
+		let results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+		if (results == null){
 		   return null;
-		}
-		else{
+		} else {
 		   return decodeURI(results[1]) || 0;
 		}
 	}
 
 	function SendRequest(r_method, r_path, r_handler) {
-		var Request = CreateRequest();
+		let Request = CreateRequest();
 		if (!Request){return;}
 		
 		Request.onreadystatechange = function() {
@@ -184,9 +176,9 @@ let renderAndSortObjects = (function(){
 	let requestDB = {
 		updatePage: function(url){
 			let Handler = function(Request){
-
-				let data = eval("(" + Request.response + ")");
-		
+				
+				let data = JSON.parse(Request.response);
+			
 				update.objects();
 				update.data(data);
 				update.titlePage(data);
@@ -196,6 +188,7 @@ let renderAndSortObjects = (function(){
 	
 				if(data[0].length){	
 					for(let i = 0; i < countElem; i++){	
+						data[0][i].price = data[0][i].price.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
 						objects["listObject"].push(data[0][i]);
 					}
 					
@@ -209,13 +202,14 @@ let renderAndSortObjects = (function(){
 		addObjects: function(url){
 			let Handler = function(Request){
 			
-				let data = eval("(" + Request.response + ")");
+				let data = JSON.parse(Request.response);
 	
 				update.objects();
 				update.textBtnShowObjects(data);
 	
 				if(data[0].length){
-					for(let i = 0; i < data[0].length; i++){	
+					for(let i = 0; i < data[0].length; i++){
+						data[0][i].price = data[0][i].price.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
 						objects["listObject"].push(data[0][i]);
 					}
 					renderPage.add(objects);
@@ -307,10 +301,8 @@ let renderAndSortObjects = (function(){
 			current.dataset.order = "asc";
 		}
 	}
-
 });
 renderAndSortObjects();
-
 
 /* Метод для моб. миню */
 let h_map = document.querySelector(".h_map");
@@ -332,6 +324,7 @@ function activeMenuMobile() {
 function eventSubscriptionForm(){
 	let formBtn = document.querySelector("input[data-form='btn']");
 	let fieldEmail = document.querySelector("input[data-field='email']");
+	let consent = document.querySelector("[data-id='consent']");
 
 	if(formBtn){
 		formBtn.addEventListener("click", sendForm, false);
@@ -339,6 +332,9 @@ function eventSubscriptionForm(){
 
 	if(fieldEmail){
 		fieldEmail.addEventListener("input", handlingFieldEmail, false);
+	}
+	if(consent){
+		consent.addEventListener("click", handlingFieldConsent, false);
 	}
 }
 eventSubscriptionForm();
@@ -351,13 +347,21 @@ function handlingFieldEmail(event){
 	errorMessage.removeMessage(message);
 }
 
+function handlingFieldConsent(event){
+	let consent = event.target;
+	checkboxConsent = findELemDepth(consent.parentElement, "checkbox_consent"),
+	message = checkboxConsent.querySelector(".error_message");
+
+	errorMessage.removeMessage(message);
+}
+
 function sendForm(event){
 	event.preventDefault();
 	let currrent = event.target,
 		form = findELemDepth(currrent.parentElement ,"form"),
 		fieldEmail = form.querySelector("input[data-field='email']");
-
-	let validForm = handlingForm(fieldEmail);
+		
+	let validForm = handlingForm(form);
 
 	if(validForm){
 		fieldEmail.value = "";
@@ -365,9 +369,12 @@ function sendForm(event){
 	}
 }
 
-function handlingForm(fieldEmail){
+function handlingForm(form){
 
-	let val = fieldEmail.value.trim(),
+	let fieldEmail = form.querySelector("input[data-field='email']"),
+		val = fieldEmail.value.trim(),
+		fieldConsent = form.querySelector("#consent"),
+		consent = fieldConsent.checked,
 		valid = false;
 
 	if(val){
@@ -375,17 +382,26 @@ function handlingForm(fieldEmail){
 		if(!valid){
 			fieldEmail.value = val;
 			errorMessage.setMessage(fieldEmail, "некорректный email");
+			return valid
 		}
 	} else {
 		fieldEmail.value = "";
 		errorMessage.setMessage(fieldEmail, "обязательное поле");
+		return valid
+	}
+
+	if(consent){
+		valid = consent;
+	} else {
+		valid = consent;
+		errorMessage.setMessage(fieldConsent, "Подтвердите согласие");
 	}
 
 	return valid
 }
 
 function validateEmail(email) {
-	var pattern  = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,6})$/;
+	let pattern  = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,6})$/;
 	return pattern.test(email);
 }
 
@@ -414,8 +430,8 @@ function findELemDepth(current, classFind){
 (function() {
 
 	function trackScroll() {
-		var scrolled = window.pageYOffset;
-		var coords = document.documentElement.clientHeight;
+		let scrolled = window.pageYOffset;
+		let coords = document.documentElement.clientHeight;
 
 		if (scrolled > coords) {
 			goTopBtn.classList.add('up');
@@ -432,7 +448,7 @@ function findELemDepth(current, classFind){
 		}
 	}
 
-	var goTopBtn = document.querySelector('#btntop');
+	let goTopBtn = document.querySelector('#btntop');
 
 	window.addEventListener('scroll', trackScroll);
 	goTopBtn.addEventListener('click', backToTop);
