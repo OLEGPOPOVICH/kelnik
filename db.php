@@ -30,6 +30,7 @@ function updateCountPage(){
 		}
 	}
 }
+
 function updateNumberFullPages(){
 	$GLOBALS['numberFullPages'] = ceil($GLOBALS['objectsCount'] / $GLOBALS['countElemPage']);
 }
