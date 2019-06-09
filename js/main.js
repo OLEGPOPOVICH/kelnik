@@ -14,9 +14,7 @@ let renderAndSortObjects = (function(){
 	
 		if (window.XMLHttpRequest){
 			Request = new XMLHttpRequest();
-		}
-		else if (window.ActiveXObject)
-		{
+		} else if (window.ActiveXObject) {
 			try {
 				 Request = new ActiveXObject("Microsoft.XMLHTTP");
 			} catch (CatchException){
@@ -49,15 +47,16 @@ let renderAndSortObjects = (function(){
 			if (Request.readyState == 4) {
 				if (Request.status == 200) {
 					r_handler(Request);
-				} else { alert("Error")}
-			} else { }
+				} else {alert("Error")}
+			} else {}
 		}
 		
 		let urlSearch = window.location.search;
 	
-		if (r_method.toLowerCase() == "get" && urlSearch.length > 0)
-		r_path += urlSearch
-		
+		if (r_method.toLowerCase() == "get" && urlSearch.length > 0) {
+			r_path += urlSearch;
+		}
+			
 		Request.open(r_method, r_path, true);
 		
 		if (r_method.toLowerCase() == "post") { 
@@ -92,7 +91,7 @@ let renderAndSortObjects = (function(){
 				let page = $.urlParam("page");
 				if(page !== null){
 					if(page <= numberFullPages){
-						countPage = page
+						countPage = page;
 					}
 				}
 			}
@@ -101,14 +100,14 @@ let renderAndSortObjects = (function(){
 			if(data[0].length){
 				if(countPage == numberFullPages - 1){
 					objectsLastPage = countObject - ((numberFullPages-1) * countElemPage);
-					objectsBtnMore.innerHTML = 	"показать еще <span>" + objectsLastPage + "</span>"
+					objectsBtnMore.innerHTML = 	"показать еще <span>" + objectsLastPage + "</span>";
 				} else if(countPage < numberFullPages){
-					objectsBtnMore.innerHTML = 	"показать еще <span>" + countElemPage + "</span>"
+					objectsBtnMore.innerHTML = 	"показать еще <span>" + countElemPage + "</span>";
 				} else {
-					objectsBtnMore.innerHTML = "Это все объекты"
+					objectsBtnMore.innerHTML = "Это все объекты";
 				}
 			} else {
-				objectsBtnMore.innerHTML = "Объектов не найдено!"
+				objectsBtnMore.innerHTML = "Объектов не найдено!";
 			}
 		},
 		titlePage: function(data){
@@ -121,8 +120,8 @@ let renderAndSortObjects = (function(){
 		sortMenu: function(){
 			let search = document.location.search;
 			if(search){
-				let sort = $.urlParam("sort");
-				let sortOrder = $.urlParam("order"); 
+				let sort = $.urlParam("sort"),
+					sortOrder = $.urlParam("order"); 
 				if(sort){
 					let sortItem = document.querySelector("[data-sort=" + sort + "]");
 					if(sortItem){
@@ -142,14 +141,14 @@ let renderAndSortObjects = (function(){
 
 	let renderPage = {
 		update: function(objects){
-			let objectsTemplate = $("#oblects-container").html();
-			let compiledTemplate = Handlebars.compile(objectsTemplate);
+			let objectsTemplate = $("#oblects-container").html(),
+				compiledTemplate = Handlebars.compile(objectsTemplate);
 		
 			$("#objects-list").html(compiledTemplate(objects));
 		},
 		add: function(objects){
-			let objectsTemplate = $("#oblects-container").html();
-			let compiledTemplate = Handlebars.compile(objectsTemplate);
+			let objectsTemplate = $("#oblects-container").html(),
+				compiledTemplate = Handlebars.compile(objectsTemplate);
 		
 			$("#objects-list").append(compiledTemplate(objects));
 		}
@@ -223,8 +222,8 @@ let renderAndSortObjects = (function(){
 	
 	let urlParams = {
 		sort: function(current){
-			let sort = current.dataset.sort;
-			let sortOrder = current.dataset.order;
+			let sort = current.dataset.sort,
+				sortOrder = current.dataset.order;
 		
 			if(sortOrder === "asc" || sortOrder === "desc"){
 				if(sort === "price" || sort === "room"){
@@ -233,8 +232,8 @@ let renderAndSortObjects = (function(){
 			} else {return;}
 		},
 		sortPage: function(){
-			let search = document.location.search;
-			let sort = null;
+			let search = document.location.search,
+				sort = null;
 	
 			if(search){
 				let pos = search.indexOf('&page');
@@ -276,17 +275,17 @@ let renderAndSortObjects = (function(){
 			current = findELemDepth(current.parentElement, "sort_item");
 			current.classList.toggle("active");
 			urlParams.sort(current);
-			setActiveSort(current)
+			setActiveSort(current);
 		} else {
 			current.classList.toggle("active");
 			urlParams.sort(current);
-			setActiveSort(current)
+			setActiveSort(current);
 		}
 	}
 
 	function setActiveSort(current){
-		let sort = current.dataset.sort;
-		let sortOrder = current.dataset.order;
+		let sort = current.dataset.sort,
+			sortOrder = current.dataset.order;
 		if(sort === "price"){
 			current.classList.add("sort-active");
 			current.nextElementSibling.classList.remove("sort-active");
@@ -312,8 +311,8 @@ if(h_map){
 
 function activeMenuMobile() {
 	this.classList.toggle("open");
-	let menu = document.querySelector(".header_nav");
-	let body = document.querySelector("body");
+	let menu = document.querySelector(".header_nav"),
+		body = document.querySelector("body");
 	if(menu){
 		menu.classList.toggle("open");
 		body.classList.toggle("is-open");
@@ -322,14 +321,13 @@ function activeMenuMobile() {
 
 /* Методы для формы подписки */
 function eventSubscriptionForm(){
-	let formBtn = document.querySelector("input[data-form='btn']");
-	let fieldEmail = document.querySelector("input[data-field='email']");
-	let consent = document.querySelector("[data-id='consent']");
+	let formBtn = document.querySelector("input[data-form='btn']"),
+		fieldEmail = document.querySelector("input[data-field='email']"),
+		consent = document.querySelector("[data-id='consent']");
 
 	if(formBtn){
 		formBtn.addEventListener("click", sendForm, false);
 	}
-
 	if(fieldEmail){
 		fieldEmail.addEventListener("input", handlingFieldEmail, false);
 	}
@@ -348,9 +346,9 @@ function handlingFieldEmail(event){
 }
 
 function handlingFieldConsent(event){
-	let consent = event.target;
-	checkboxConsent = findELemDepth(consent.parentElement, "checkbox_consent"),
-	message = checkboxConsent.querySelector(".error_message");
+	let consent = event.target,
+		checkboxConsent = findELemDepth(consent.parentElement, "checkbox_consent"),
+		message = checkboxConsent.querySelector(".error_message");
 
 	errorMessage.removeMessage(message);
 }
@@ -359,9 +357,8 @@ function sendForm(event){
 	event.preventDefault();
 	let currrent = event.target,
 		form = findELemDepth(currrent.parentElement ,"form"),
-		fieldEmail = form.querySelector("input[data-field='email']");
-		
-	let validForm = handlingForm(form);
+		fieldEmail = form.querySelector("input[data-field='email']"),
+		validForm = handlingForm(form);
 
 	if(validForm){
 		fieldEmail.value = "";
@@ -382,12 +379,12 @@ function handlingForm(form){
 		if(!valid){
 			fieldEmail.value = val;
 			errorMessage.setMessage(fieldEmail, "некорректный email");
-			return valid
+			return valid;
 		}
 	} else {
 		fieldEmail.value = "";
 		errorMessage.setMessage(fieldEmail, "обязательное поле");
-		return valid
+		return valid;
 	}
 
 	if(consent){
@@ -397,7 +394,7 @@ function handlingForm(form){
 		errorMessage.setMessage(fieldConsent, "Подтвердите согласие");
 	}
 
-	return valid
+	return valid;
 }
 
 function validateEmail(email) {
@@ -409,8 +406,9 @@ let errorMessage = {
 	setMessage: function(field, text) {
 		let wrapperInput = field.parentElement,
 			message = wrapperInput.querySelector(".error_message");
-			message.firstElementChild.innerHTML = text;
-			message.classList.add("active");
+
+		message.firstElementChild.innerHTML = text;
+		message.classList.add("active");
 	},
 	removeMessage: function(message) {
 		message.classList.remove("active");
@@ -429,8 +427,8 @@ function findELemDepth(current, classFind){
 (function() {
 
 	function trackScroll() {
-		let scrolled = window.pageYOffset;
-		let coords = document.documentElement.clientHeight;
+		let scrolled = window.pageYOffset,
+			coords = document.documentElement.clientHeight;
 
 		if (scrolled > coords) {
 			goTopBtn.classList.add('up');
